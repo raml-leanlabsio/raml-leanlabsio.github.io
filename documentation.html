@@ -1,10 +1,15 @@
 <!DOCTYPE HTML>
+<!--
+	Ion by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
 <html>
 	<head>
-		<title>raml2html html documentation generator from raml file</title>
+		<title>Left Sidebar - Ion by TEMPLATED</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="raml2html html documentation generator from raml file" />
-		<meta name="keywords" content="raml2html html documentation generator from raml file" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
 		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
 		<script src="js/jquery.min.js"></script>
 		<script src="js/skel.min.js"></script>
@@ -35,53 +40,70 @@
 		<!-- Main -->
 			<section id="main" class="wrapper style1">
 				<header class="major">
-					<h2>Raml to Html</h2>
-					<p>Build extensive API documentation from a RAML (RESTful API Modeling Language) file</p>
-					<ul class="actions">
-						<li><a href="github" class="button alt">View demo</a></li>
-					</ul>
+					<h2>Documentation</h2>
 				</header>
 				<div class="container">
 					<div class="row">
-						<div class="6u">
-							<section class="special">
-								<a href="#" class="image fit"><img src="images/pic01.jpg" alt="" /></a>
-								<h3>Secured by usabled</h3>
-								<p>В сгенерированном файле документации будет описаны все закрытые и открытые места для доступа к ресурсам. Все имеющиеся схемы авторизации для данного ресурса, с автоматически проставленными заголовками.</p>
+						<div class="4u">
+							<section>
+								<ul class="alt">
+									<li><a href="#installation">Installation</a></li>
+									<li><a href="#usage">Usage</a></li>
+								</ul>
 							</section>
 						</div>
-						<div class="6u">
-							<section class="special">
-								<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-								<h3>Parent resource capability</h3>
-								<p>Все дочерние ресурсы описынне в спецификации наследуют все родительские uri параметры заголовки security</p>
-							</section>
-						</div>
-					</div>
-				</div>
+						<div class="8u skel-cell-important">
+							<section  id="installation">
+								<h2>Installation</h2>
+								<h4>Download</h4>
+								<p>We distribute a PHP Archive (PHAR) that contains everything you need in order to use PHPUnit. Simply download it from here, make it executable, and put it into your $PATH, for instance:</p>
 
-				<div class="container">
-					<div class="row">
-						<div class="6u">
-							<section class="special">
-								<a href="#" class="image fit"><img src="images/pic01.jpg" alt="" /></a>
-								<h3>Highliter for examples</h3>
-								<p>Доступно красивое отображение примеров запроса и ответа к ресурсам с описанием причем не обязательно указывать сам контент достаточно только добавить ссылку и он автоматически подтянется при генерации документации</p>
+								<code>
+									➜ wget http://raml2html.leanlabs.io/raml2html.phar
+								</code>
+								<br/>	
+								<code>
+									➜ chmod +x raml2html.phar
+								</code>
+								<br/>
+								<code>
+									➜ sudo mv raml2html.phar /usr/local/bin/raml2html
+								</code>
+								<br/>
+								<code>
+									➜ raml2html --version
+								</code>
+								<br/><br/>
+								<p>
+									You can also immediately use the PHAR after you have downloaded it, of course:
+								</p>
+
+								<code>
+									➜ wget http://raml2html.leanlabs.io/raml2html.phar
+								</code>
+								<br/>
+								<code>
+									➜ php raml2html.phar --version
+								</code>
 							</section>
-						</div>
-						<div class="6u">
-							<section class="special">
-								<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-								<h3>Json scheme validator</h3>
-								<p>При использование json scheme подтягиваются все зависимости прописанные в файле с валидацией json scheme на корректность написания</p>
+							<hr/>
+							<section id="usage">
+								<h2>Usage</h2>
+								<p>Run generator documentation:</p>
+								<code>
+									➜ raml2html generate -i input_file.raml -o output_file.html
+								</code>
+								<br/><br/>
+								<p>After generate open in your brouser for view
+									<strong>output_file.html</strong>
+								</p>
 							</section>
-						</div>
 					</div>
 				</div>
 			</section>
 
 		<!-- Footer -->
-			<!--<footer id="footer">
+		<!--<footer id="footer">
 				<div class="container">
 					<div class="row double">
 						<div class="6u">
@@ -124,7 +146,7 @@
 						<li>Images: <a href="http://unsplash.com">Unsplash</a></li>
 					</ul>
 				</div>
-			</footer>-->
+			</footer> -->
 
 	</body>
 </html>
